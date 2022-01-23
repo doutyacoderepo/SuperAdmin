@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "198106883710",
+    "project_id": "doutyaauthentication",
+    "storage_bucket": "doutyaauthentication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198106883710:android:ab225c5ebe49f5b2789a2f",
+        "android_client_info": {
+          "package_name": "com.doutya.communityhqadminapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198106883710-fp569b4li8gmksrmto761ssvgtq33eom.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.doutya.communityhqadminapplication",
+            "certificate_hash": "8bcde2360c9c2a506fdc66af47960d2f1a04fce1"
+          }
+        },
+        {
+          "client_id": "198106883710-f896di4638juhnn7cutjsrucev1c6tbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNpgyGb3FvdypWZNn5SdVhdd2LLVjvBKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198106883710-f896di4638juhnn7cutjsrucev1c6tbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198106883710:android:58dea8d0927acdc1789a2f",
+        "android_client_info": {
+          "package_name": "com.doutya.communityhquserapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198106883710-j6lm0cgmoe16fb8f3r2cb7e9bhiiucab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.doutya.communityhquserapplication",
+            "certificate_hash": "8bcde2360c9c2a506fdc66af47960d2f1a04fce1"
+          }
+        },
+        {
+          "client_id": "198106883710-f896di4638juhnn7cutjsrucev1c6tbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNpgyGb3FvdypWZNn5SdVhdd2LLVjvBKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198106883710-f896di4638juhnn7cutjsrucev1c6tbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198106883710:android:b4dac14bbcae5d12789a2f",
+        "android_client_info": {
+          "package_name": "com.doutya.superadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198106883710-f896di4638juhnn7cutjsrucev1c6tbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNpgyGb3FvdypWZNn5SdVhdd2LLVjvBKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198106883710-f896di4638juhnn7cutjsrucev1c6tbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
