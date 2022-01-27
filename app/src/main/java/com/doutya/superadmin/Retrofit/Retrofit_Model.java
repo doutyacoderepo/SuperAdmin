@@ -1,17 +1,35 @@
 package com.doutya.superadmin.Retrofit;
 
+import android.util.Log;
+
 import com.google.gson.annotations.SerializedName;
 
 public class Retrofit_Model {
 
     String type;
+    String country;
+    String state;
+    String district;
 
-    public Retrofit_Model( String type) {
-        this.type = type;
-    }
+
 
     @SerializedName("type")
     public String getType() {
         return type;
+    }
+
+    @SerializedName("country")
+    public String getCountry() {
+        return country;
+    }
+
+    @SerializedName("state")
+    public String getState() {
+        return state;
+    }
+
+    @SerializedName("district")
+    public String getDistrict() {
+        return district;
     }
 }

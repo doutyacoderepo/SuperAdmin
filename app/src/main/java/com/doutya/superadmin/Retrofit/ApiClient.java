@@ -12,7 +12,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class ApiClient {
 
-    private static final String BaseUrl = "http://192.168.1.3:80/testapp/AdminApp/";
+    private static final String BaseUrl = "http://192.168.1.2:80/testapp/AdminApp/";
 
     public static Retrofit getApiClient() {
 
