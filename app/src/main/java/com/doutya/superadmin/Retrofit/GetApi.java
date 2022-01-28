@@ -27,7 +27,7 @@ public interface GetApi {
     @Headers("Cache-Control: no-cache")
     Call<List<Retrofit_Model>> GetDistrict();
 
-        //Add Admin
+    //Add Admin
 
     @GET("searchUser.PHP")
     @Headers("Cache-Control: no-cache")
