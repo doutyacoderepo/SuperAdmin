@@ -9,9 +9,11 @@ import retrofit2.http.Headers;
 
 public interface GetApi {
 
+        //Add Community
+
     @GET("getCommunityType.php")
     @Headers("Cache-Control: no-cache")
-        Call<List<Retrofit_Model>> GetTypeData();
+    Call<List<Retrofit_Model>> GetTypeData();
 
     @GET("getCountry.php")
     @Headers("Cache-Control: no-cache")

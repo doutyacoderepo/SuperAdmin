@@ -1,5 +1,7 @@
 package com.doutya.superadmin.Retrofit;
 
+import android.util.Log;
+
 import com.google.gson.annotations.SerializedName;
 
 public class Retrofit_Model {

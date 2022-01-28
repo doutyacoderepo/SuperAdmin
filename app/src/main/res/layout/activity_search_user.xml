@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchUser">
+    tools:context=".SearchUserActivity">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/appCompatTextView"
@@ -39,5 +39,24 @@
         app:layout_constraintStart_toStartOf="@+id/AutoSearchUser"
         app:layout_constraintTop_toBottomOf="@+id/AutoSearchUser" />
 
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerSearchUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_user_Et" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AddSelectedUserS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/search_user_Et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/RecyclerSearchUser"
+        android:background="@drawable/gradient_btn"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

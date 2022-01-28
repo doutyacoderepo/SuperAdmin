@@ -1,4 +1,4 @@
-package com.doutya.superadmin.Retrofit;
+package com.doutya.superadmin.Helper;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -12,7 +12,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class ApiClient {
 
-    private static final String BaseUrl = "http://192.168.1.2:80/testapp/AdminApp/";
+    private static final String BaseUrl = "http://192.168.48.80:80/testapp/AdminApp/";
 
     public static Retrofit getApiClient() {
 
