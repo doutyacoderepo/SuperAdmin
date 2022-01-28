@@ -11,13 +11,13 @@
         android:theme="@style/Theme.SuperAdmin"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".SearchUser"
-            android:exported="false" />
-        <activity
             android:name=".Login.VerifyOtpActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchUser"
             android:exported="false" />
         <activity
             android:name=".Login.LogIn"
