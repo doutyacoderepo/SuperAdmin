@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         GetJsonForDistrict();
 
         Next.setOnClickListener(View -> {
+            startActivity(new Intent(this,SearchUserActivity.class));
             if (functions.validate(type) && functions.validate(country)
                     && functions.validate(state) && functions.validate(district)
                     && functions.validate(muncipality) && functions.validate(ward)) {
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 UploadNewCommunityData();
 
             }
+
         });
 
         AddCommunity.setOnClickListener(View -> {

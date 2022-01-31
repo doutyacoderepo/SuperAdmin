@@ -21,6 +21,7 @@ import com.doutya.superadmin.Helper.ApiClient;
 import com.doutya.superadmin.Helper.PostApi;
 import com.doutya.superadmin.Models.AdminNotifyModel;
 import com.doutya.superadmin.Models.SearchUser;
+import com.doutya.superadmin.Retrofit.PostModel;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.textfield.TextInputLayout;
@@ -44,6 +45,7 @@ public class SearchUserActivity extends AppCompatActivity {
     SearchAdapter mAdapter;
     String token=null;
     AppCompatButton addAdmin;
+    CommonFunctions functions;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +54,7 @@ public class SearchUserActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.RecyclerSearchUser);
         et = findViewById(R.id.search_user_Et);
         addAdmin = findViewById(R.id.AddSelectedUserS);
-
+        functions = new CommonFunctions();
         db = FirebaseFirestore.getInstance();
         buildRecyclerView();
         GetUserList();
@@ -95,10 +97,10 @@ public class SearchUserActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<AdminNotifyModel> call, Response<AdminNotifyModel> response) {
 
-                AdminNotifyModel img_pojo = response.body();
+                AdminNotifyModel notifyModel = response.body();
                 Toast.makeText(SearchUserActivity.this,"Response:  "
-                        + img_pojo.getResponse() , Toast.LENGTH_SHORT).show();
-                Log.e("Server Response", "" + img_pojo.getResponse());
+                        + notifyModel.getResponse() , Toast.LENGTH_SHORT).show();
+                Log.e("Server Response", "" + notifyModel.getResponse());
 
             }
 
@@ -112,6 +114,27 @@ public class SearchUserActivity extends AppCompatActivity {
         });
     }
 
+
+    private void UploadPendingApproval() {
+        com.doutya.superadmin.Retrofit.PostApi apiInterface = com.doutya.superadmin.Retrofit.ApiClient.getApiClient().create(com.doutya.superadmin.Retrofit.PostApi.class);
+        Call<PostModel> call = apiInterface.uploadAdminPendingApproval("ContactNumber",
+                "CommunityID",
+                functions.currentDate());
+        call.enqueue(new Callback<PostModel>() {
+            @Override
+            public void onResponse(Call<PostModel> call, Response<PostModel> response) {
+                PostModel postModel = response.body();
+                Toast.makeText(SearchUserActivity.this,"Response:  " + postModel.getResponse().length() , Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onFailure(Call<PostModel> call, Throwable t) {
+                Toast.makeText(SearchUserActivity.this,  "Failure: " + t.toString(), Toast.LENGTH_SHORT).show();
+
+            }
+        });
+    }
 
 
     private void filter(String text) {
